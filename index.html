@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WHO’S HER ?? 💕</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  font-family:'Georgia', serif;
+  background:linear-gradient(160deg,#fde2e4,#e0e7ff);
+  color:#333;
+  height:100%;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+/* Floating Emojis */
+.floating{
+  position:fixed;
+  top:-10%;
+  animation:floatUp linear infinite;
+  pointer-events:none;
+  opacity:0.9;
+  z-index:1;
+}
+
+@keyframes floatUp{
+  from{ transform:translateY(110vh) rotate(0deg); opacity:1; }
+  to{ transform:translateY(-10vh) rotate(360deg); opacity:0; }
+}
+
+/* Sparkles */
+.sparkle{
+  position:fixed;
+  width:6px;
+  height:6px;
+  background:white;
+  border-radius:50%;
+  box-shadow:0 0 12px white;
+  animation:sparkle 2.5s infinite;
+  z-index:1;
+}
+
+@keyframes sparkle{
+  0%,100%{ opacity:0; transform:scale(0.5); }
+  50%{ opacity:1; transform:scale(1.3); }
+}
+
+/* Main Container */
+.container{
+  position:relative;
+  z-index:2;
+  padding:50px 20px 80px;
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+/* Vinyl */
+.vinyl{
+  font-size:70px;
+  animation:spin 6s linear infinite;
+}
+
+@keyframes spin{
+  to{ transform:rotate(360deg); }
+}
+
+h1{
+  font-size:3em;
+  color:#ff5f9e;
+  margin:20px 0;
+}
+
+/* Message Box */
+.message{
+  width:100%;
+  margin:30px auto;
+  font-size:1.15em;
+  background:rgba(255,255,255,0.7);
+  padding:25px;
+  border-radius:25px;
+  min-height:300px;
+  text-align:left;
+  line-height:1.7;
+  white-space:pre-line;
+}
+
+/* Button */
+.next-btn{
+  margin-top:30px;
+  padding:12px 30px;
+  font-size:1.1em;
+  background:#ff5f9e;
+  color:white;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.next-btn:hover{
+  background:#ff3f8b;
+}
+
+/* Mobile */
+@media(max-width:600px){
+  h1{ font-size:2em; }
+  .vinyl{ font-size:55px; }
+  .message{
+    font-size:1em;
+    padding:18px;
+    min-height:260px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIC -->
+
+<audio autoplay loop id="bgMusic">
+  <source src="abc.mp3">
+</audio>
+
+<div class="container">
+  <div class="vinyl">💿</div>
+  <h1>UMHH FOR YOU !!! ?</h1>
+
+  <div class="message" id="typing"></div>
+
+  <button class="next-btn" onclick="location.href='page2.html'">
+    Next ➜
+  </button>
+</div>
+
+<script>
+  document.addEventListener("click", function () {
+  const music = document.getElementById("bgMusic");
+  music.play();
+}, { once: true });
+
+
+let i = 0;
+
+/* TEXT */
+const text = `Hey you,
+ARE YOU A MAJESTIC? 
+ I MEAN YOU DON’T BELIEVE 
+UMHH LIKE FOR THE FIRST TIME EVER 
+MUJHE KISI LADKI SE BHT DAR LAGAA
+I MEAN FROM STARTING I THOUGHT SHES Rude but she isn’t yaar 
+Bhai vohh bht sweet h to be very honest 
+Yaar but the way she talks to boyss 
+Like fully dominating fully divaa behaviour 
+I mean inka bas chale to boyss ko drums m dalde
+Khair h 
+So now let me yell you k m kaise dara tha usse
+Its like 2 years before 
+Me gisi m ayaa like mera first Pakistani gc and that time call chal rhaa tha 
+And i joined that call and then i ask how are you guyss and all blah blah 
+And they guys are good they were discussing abt indian politics and ppl and that time she was there 
+So basically im talking to them k like haaa yaar indian politics and indians people are eww
+Then she start saying “HAMARE SAMNE ESAA BOLOGE ACHHA BANNE K LIYE AND ALL “ bhai i was literally shock 
+K with knowing someone koi ese kaise bol sktaa h 
+But as i said earlier she’s so dominating bhai 
+And I was like “Niee yaar me aapke samne achha banne k liye q bolunga”
+Then she replied 
+“Mujhe mat seekhao me janti hu indians ko “
+That time i was so shock and i didn’t said anything 
+And the they change the topic and they are giving their own opinion on something 
+And when i shared my opinion 
+She said “PUCHAA THAA KISINE ?? “
+Bhaiiii that time se mujhe bht dar lagne lagaa isse k koi esa kaise bol skti unknown ko mujhe bht dar lagne laga tabse bht dartaa thaa
+But as i said earlier she’s so sweet 
+Then meri baaten hone lagi unse and we used to talk in gc
+(But is bich me dartaa thaa)
+Then me unse apne suggestion manga 
+And her suggestion was so good at tho
+And then im just so friendly with her
+Me tea share krne laga and voh sunte aur react krte
+Then ese hi time to time m aur achhe se samajh paya unhe
+Fir ek din mujhe meri crush se baaten hone lagi jaise hi baat hui i ran to her and told everything and she said k kaat k jayegi cause the way i present my crush infront of her obviously sab yhi bolega
+(Esa me sochaa )
+But the Sach m jab kaat k gyi bhai 
+“She was so fucking right bhai that time im regretting k kash baat sun letaa unki to yeh din na dekhna pdtaa 
+Bhai after that day i declare her my personal advisor “
+Bhai im so blessed k me unse baat kar pataa hu yaar she’s so dominating divaa 
+Umhh she’s one of the bestest international freind ever <3
+Khair
+Me uska naam batana chahunga
+Jisse m Abhi bhi dartaa hu
+To uska naam h
+“SHIZAAA FAYYAZ”
+“SHIZAAA THE DIVA
+SHIZAA THE BADDIE
+SHIZAA BHAIIIIIIIIIII
+AND ITS ALL “
+WHOLE PARAGRAPH ABT
+SHIZA FAYYAZ `;
+
+/* Typing Effect */
+function typeText(){
+  if(i < text.length){
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeText, 30);
+  }
+}
+typeText();
+
+
+
+/* Floating Emojis */
+const emojis=["💖","✨","🌸","💫","🦋","💕","💗"];
+for(let i=0;i<35;i++){
+  let f=document.createElement("div");
+  f.className="floating";
+  f.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+  f.style.left=Math.random()*100+"vw";
+  f.style.fontSize=(18+Math.random()*22)+"px";
+  f.style.animationDuration=(6+Math.random()*6)+"s";
+  document.body.appendChild(f);
+}
+
+/* Sparkles */
+for(let i=0;i<30;i++){
+  let s=document.createElement("div");
+  s.className="sparkle";
+  s.style.left=Math.random()*100+"vw";
+  s.style.top=Math.random()*100+"vh";
+  s.style.animationDelay=Math.random()*2+"s";
+  document.body.appendChild(s);
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Just You, in Every Frame 💕</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(160deg,#fde2e4,#e0e7ff);
+  text-align: center;
+  color: #333;
+  overflow-x:hidden;
+}
+
+/* Header */
+h1 {
+  margin-top: 40px;
+  color: #ff5f9e;
+}
+
+/* Photos grid */
+.photos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px;
+}
+.photos img {
+  width: 220px;
+  height: auto; /* fix */
+  aspect-ratio: 3/4; /* optional for same shape */
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.photos img:hover{
+  transform: scale(1.05);
+}
+
+/* Buttons */
+button {
+  padding: 10px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 25px;
+  background: #ff5f9e;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+button:hover{
+  background: #ff3f8b;
+  transform: scale(1.05);
+}
+
+/* Floating emojis */
+.floating{
+  position: fixed;
+  top: -10%;
+  animation: fall linear infinite;
+  pointer-events: none;
+  z-index:1;
+}
+
+@keyframes fall{
+  from { transform: translateY(-10vh) rotate(0deg); opacity:1; }
+  to { transform: translateY(110vh) rotate(360deg); opacity:0; }
+}
+
+/* Sparkles */
+.sparkle{
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background:white;
+  border-radius:50%;
+  box-shadow:0 0 12px white;
+  animation: sparkle 2.5s infinite;
+  z-index:1;
+}
+
+@keyframes sparkle{
+  0%,100% { opacity:0; transform:scale(0.4); }
+  50% { opacity:1; transform:scale(1.4); }
+}
+
+/* Mobile */
+@media(max-width:500px){
+  .photos img{
+    width: 160px;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Just You, in Every Frame 💕</h1>
+
+<audio autoplay loop>
+  <source src="abc.mpeg">
+</audio>
+
+<div class="photos">
+  <img src="one.jpeg" alt="">
+  <img src="two.jpeg" alt="">
+  <img src="three.jpeg" alt="">
+  <img src="f.jpeg" alt="">
+</div>
+
+<button onclick="location.href='page3.html'">Next ➜</button>
+
+<script>
+const emojis=["💖","✨","🌸","💫","🦋","💕"];
+for(let i=0;i<25;i++){
+  let e=document.createElement("div");
+  e.className="floating";
+  e.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+  e.style.left=Math.random()*100+"vw";
+  e.style.fontSize=(16+Math.random()*20)+"px";
+  e.style.animationDuration=(5+Math.random()*6)+"s";
+  document.body.appendChild(e);
+}
+for(let i=0;i<30;i++){
+  let s=document.createElement("div");
+  s.className="sparkle";
+  s.style.left=Math.random()*100+"vw";
+  s.style.top=Math.random()*100+"vh";
+  s.style.animationDelay=Math.random()*2+"s";
+  document.body.appendChild(s);
+}
+</script>
+
+</body>
+</html>

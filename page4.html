@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Final Frame 💕</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  height:100%;
+  font-family:'Georgia', serif;
+  background:linear-gradient(160deg,#fde2e4,#e0e7ff);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  overflow:hidden; /* ❌ scroll band */
+  text-align:center;
+}
+
+/* Image perfect fit */
+.center-img{
+  max-width:90%;
+  max-height:65vh; /* 👈 screen ke andar fit */
+  height:auto;
+  width:auto;
+  border-radius:20px;
+  box-shadow:0 18px 40px rgba(0,0,0,0.25);
+  object-fit:contain;
+}
+
+/* Button just below */
+.next-btn{
+  margin-top:15px;
+  padding:10px 30px;
+  font-size:1em;
+  background:#ff5f9e;
+  color:white;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  box-shadow:0 10px 24px rgba(0,0,0,0.25);
+}
+
+.next-btn:hover{
+  background:#ff3f8b;
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+  <source src="abc.mpeg">
+</audio>
+
+<img src="qwee.jpeg" class="center-img">
+
+<button class="next-btn" onclick="location.href='index.html'">
+  Finish 💖
+</button>
+
+</body>
+</html>
